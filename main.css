@@ -1,0 +1,374 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+body,html {
+    margin:0;
+    padding:0;
+  }
+#mainImage-size{
+  width: 100%;
+  height: auto;
+}
+.firstSection {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    
+  } 
+  
+  div.firstSection--frontDev {
+    position: absolute;
+    top: -15%;
+    right: 9%;
+    width: 50%;
+    height: 400px;
+    background-color: white;
+    display: flex;
+    box-shadow:-1px 5px 3px 0px #EDEAEA;  
+
+  }
+  
+  div.firstSection--backDev{
+    position: absolute;
+    transition: left 3s ease-in-out, top 3s ease-in-out, display 3s ease-in-out;
+    top: 20%;
+    left:10%;
+    width: 50%;
+    height: 400px;
+  }
+
+  span{
+    font-size: 60px;
+    color: gray;
+    font-family: 'Architects Daughter', cursive;
+}
+
+ p{
+  
+  font-family: 'Architects Daughter', cursive;
+}
+
+ #frontDev--image-size{
+     width: 50%;
+ }
+
+ #backDev--image-size{
+    width: 100%;
+    height: 100%;
+}
+
+  div.firstSection--frontDev{transition: top 3s ease-in-out, z-index 3s ease-in-out;}
+
+
+ 
+  .frontDev--text-position{
+      display: flex;
+      flex-direction: column;
+      padding: 15px;
+      justify-content: space-around;
+      
+  }
+
+  .frontDev--button-white{
+    width: fit-content;
+    padding: 5% 11%;
+    background-color: white;
+    border: solid #ECE6E6 1px;
+    border-radius: 20px;
+  }
+
+  .frontDev--button-white:hover{
+      background-color: #C6BCBC;
+      color: white;
+      cursor: pointer;
+  }
+
+  .frontDev--button-white:focus{
+      outline: none;
+  }
+
+
+  #frontDev--hr-color{
+      width: 20%;
+      margin-left: 0px;
+      margin-bottom: 10px;
+  }
+
+  .secondSection{
+      display: flex;
+      padding:0% 4%;
+  }
+
+  .secondSection > *{
+    flex: 1;
+    padding:0 2%;
+  }
+  .secondSection--image-size{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    
+  }
+
+ .secondSection--title-size{
+   font-size: 30px;
+ }
+ .secondSection-info-size{
+   display: flex;
+   align-items: flex-end;
+ }
+
+ .thirdSection{
+  padding: 5%;
+ 
+ }
+
+ .thirdSection--firstImage{
+   float: left;
+   width: 50%;
+   height: 500px;
+   padding: 0.5% 0;
+   box-sizing: border-box 
+ }
+
+ .thirdSection--smallImagesConiatner{
+   float: right ;
+   width: 50%;
+   
+ }
+.thirdSection--secondImage{
+  float: left;
+  width: 50%;
+  height: 250px;
+  padding: 1%;
+  box-sizing: border-box
+}
+.thirdSection--thirdImage{
+  float: right;
+  width: 50%;
+  height: 250px;
+  padding: 1% 1% 1% 0%;
+  box-sizing: border-box
+}
+.thirdSection--fourthImage{
+  clear: both;
+  float: left;
+  width: 50%;
+  height: 250px;
+  padding: 0 1% 1% 1%;
+  box-sizing: border-box
+}
+.thirdSection--fifthmage{
+  float: right;
+  width: 50%;
+  height: 250px;
+  padding: 0% 1% 1% 0% ;
+  box-sizing: border-box
+}
+.thirdSection--secondImage-size,.thirdSection--thirdImage-size,.thirdSection--fourthImage-size,.thirdSection--fifthmage-size{
+  width: 100%;
+  height: 100%;
+}
+  @media only screen and (max-width:1000px){
+    .firstSection{height: 520px; }
+    div.firstSection--frontDev { top: -12%; }
+    div.firstSection--backDev{ left: 12%; top: 17%;}
+    #mainImage-size{
+      width: 100%;
+      height: auto;
+    }
+    span{
+        font-size: 40px;
+    }
+  
+    p{
+        font-size: 15px;
+    }
+  }
+
+  @media only screen and (max-width:800px){
+    div.firstSection--frontDev {
+        top: -8%;
+        flex-direction: column; 
+        z-index: 2; 
+        
+      }
+
+    div.firstSection--backDev{
+      left: 15%;
+      top: 9%;
+      }
+
+    #mainImage-size{
+        width: 100%;
+        height: auto;
+      }
+
+    #frontDev--image-size{
+        width: 100%;
+        height: 30%;
+    }
+
+    span{
+        font-size: 25px;
+    }
+    p{
+        font-size: 13px;
+    }
+    .frontDev--button-white{
+        align-self: center; 
+      }  
+
+    .secondSection-imageContainer--display{
+      display: none;
+    }
+
+    .thirdSection--firstImage{
+      width: 100%;
+      height: 300px;
+      padding: 1%;
+    }
+    .thirdSection--smallImagesConiatner{
+      float: right ;
+      width: 100%;
+    }
+   .thirdSection--secondImage{
+     float: left;
+     width: 50%;
+     height: 200px;
+     padding: 1%;
+   }
+   .thirdSection--thirdImage{
+     float: right;
+     width: 50%;
+     height: 200px;
+     padding: 1%;
+   }
+   .thirdSection--fourthImage{
+     clear: both;
+     float: left;
+     width: 50%;
+     height: 200px;
+     padding: 1%;
+   }
+   .thirdSection--fifthmage{
+     float: right;
+     width: 50%;
+     height: 200px;
+     padding: 1%;
+   }
+  }
+
+  @media only screen and (max-width:600px){
+
+    div.firstSection--frontDev {
+      width: 60%;
+      top: -7%; 
+    }
+
+  div.firstSection--backDev{
+    width: 60%;
+    left: 9%;
+    top: 5%;
+    }
+
+  .secondSection {
+      flex-direction: column;
+      padding:0 7%;
+    }  
+  
+  }
+
+  @media only screen and (max-width:480px){
+
+    div.firstSection--frontDev {
+        height: 450px;
+        top: -3%;
+        flex-direction: column; 
+        width: 80%;
+        align-self: center;
+        box-shadow: 2px 6px 3px 6px #EDEAEA;
+      }
+
+    #mainImage-size{
+        width: 100%;
+        height: auto;
+        
+      }
+
+    #frontDev--image-size{
+        width: 100%;
+        height: 35%;
+    }
+
+    span{
+        font-size: 25px;
+    }
+    p{
+        font-size: 11px;
+    }
+
+
+    div.firstSection--backDev{
+      left: 11%;
+      width: 80%;
+      top: 1%;
+    }
+
+    .frontDev--button-white{
+      width: fit-content;
+      font-size: 10px;
+      padding: 3% 9%;
+      background-color: white;
+      border: solid #ECE6E6 1px;
+      border-radius: 20px;
+    }
+    .secondSection {
+      flex-direction: column;
+      padding:0 7%;
+    }
+
+    .thirdSection--firstImage{
+      width: 100%;
+      height: 200px;
+    }
+    .thirdSection--smallImagesConiatner{
+      float: right ;
+      width: 100%;
+    }
+   .thirdSection--secondImage{
+     float: left;
+     width: 100%;
+     height: 150px;
+   }
+   .thirdSection--thirdImage{
+     float: right;
+     width: 100%;
+     height: 150px;
+   }
+   .thirdSection--fourthImage{
+     clear: both;
+     float: left;
+     width: 100%;
+     height: 150px;
+   }
+   .thirdSection--fifthmage{
+     float: right;
+     width: 100%;
+     height: 150px;
+   }
+  }
+
+  @media only screen and (max-width:400px){
+    div.firstSection--backDev{
+      display: none;
+    }
+
+    .secondSection {
+      flex-direction: column;
+      padding:0 7%;
+    }
+    .secondSection--title-size{
+      font-size: 25px;
+    }
+  }
